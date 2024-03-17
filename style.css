@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Redressed", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background: rgb(40, 41, 52);
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 250px;
+    height: 250px;
+    background: gainsboro;
+    border-radius: 15%;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    box-shadow: 5px 5px 30px rgba(0,0,0,.5);
+}
+
+.photo{
+    width: 125px;
+    height: 125px;
+    background-image: url('https://apollo.olx.in/v1/files/o7mm1v57xs8n2-IN/image;s=');
+    background-size: cover;
+    border-radius: 50%;
+    border: 7px solid gainsboro;
+    outline: 3.5px solid slategray;
+}
+
+.name{
+    font-size: 30px;
+    font-weight: 500;
+    color: #212121;
+    user-select: none;
+}
+
+.handles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 20px 10px;
+    position: absolute;
+    background: #Fff;
+    border-radius: 25px;
+    right: -10px;
+    z-index: -1;
+    transition: 1s ease-in-out;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.5);
+}
+
+.handles a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: inset 0px -3px 5px rgba(0,0,0,.5);
+}
+  
+
+.card:hover > .handles{
+    right: -30px;
+    z-index: 1;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    opacity: .5;
+    color: silver;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #cbbeff;
+}
